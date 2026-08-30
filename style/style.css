@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+.textPreset1 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 22px;
+}
+.textPreset2 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 145%;
+}
+.textPreset3-semiBold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.textPreset3-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.textPreset1,
+.textPreset3-regular,
+.textPreset3-semiBold {
+  line-height: 125%;
+}
+.textPreset1,
+.textPreset2,
+.textPreset3-regular,
+.textPreset3-semiBold {
+  letter-spacing: 0px;
+}
