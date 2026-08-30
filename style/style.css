@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --white: white;
+  --black: black;
+
+  --blue950: #0d192c;
+  --blue900: #15263f;
+  --blue800: #2e405a;
+  --blue500: #8bacd9;
+
+  --cyan400: rgb(0, 255, 248);
+
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+}
 * {
   box-sizing: border-box;
 }
