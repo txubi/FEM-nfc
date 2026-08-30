@@ -93,7 +93,7 @@ h1 {
 }
 .cost::before {
   content: "";
-  background-image: url("/../images/icon-ethereum.svg");
+  background-image: url("../images/icon-ethereum.svg");
   padding-right: 8px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@ p {
 }
 .time::before {
   content: "";
-  background-image: url("/../images/icon-clock.svg");
+  background-image: url("../images/icon-clock.svg");
   padding-right: 8px;
   background-size: contain;
   background-repeat: no-repeat;
