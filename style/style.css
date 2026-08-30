@@ -13,6 +13,7 @@
   --spacing-0: 0px;
   --spacing-100: 8px;
   --spacing-200: 16px;
+  --spacing-250: 20px;
   --spacing-300: 24px;
 }
 * {
@@ -21,7 +22,7 @@
 .textPreset1 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 400;
   font-style: normal;
   font-size: 22px;
 }
@@ -56,7 +57,64 @@
 .textPreset3-semiBold {
   letter-spacing: 0px;
 }
+body {
+  background-color: var(--blue950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 350px;
+  height: 598px;
+  padding: var(--spacing-300);
+  background-color: var(--blue900);
+  border-radius: 15px;
+}
 img {
   height: 302px;
   width: 302px;
+}
+.card-minusImage {
+  width: 191px;
+  height: 166px;
+} /*
+.description-price {
+  height: 140px;
+  margin-bottom: 24px;
+} */
+h1 {
+  color: var(--white);
+}
+.cost {
+  color: var(--cyan400);
+}
+.cost-time {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--spacing-300);
+}
+.avatar {
+  height: 33px;
+  width: 33px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.time,
+.author,
+p {
+  color: var(--blue500);
+}
+strong {
+  color: var(--white);
+  margin-left: 8px;
+}
+.attribution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 231px;
+  height: 33px;
+  padding-top: calc(var(--spacing-300) + 16px);
+  border-top: 1px solid var(--blue800);
 }
