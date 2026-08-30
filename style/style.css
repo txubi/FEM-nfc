@@ -9,6 +9,7 @@
   --blue500: #8bacd9;
 
   --cyan400: rgb(0, 255, 248);
+  --cyan400-t: rgba(0, 255, 248, 0.4);
 
   --spacing-0: 0px;
   --spacing-100: 8px;
@@ -39,12 +40,14 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
 }
 .textPreset3-regular {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  font-size: 16px;
 }
 .textPreset1,
 .textPreset3-regular,
@@ -66,7 +69,7 @@ body {
 }
 .card {
   width: 350px;
-  height: 598px;
+  height: 596px;
   padding: var(--spacing-300);
   background-color: var(--blue900);
   border-radius: 15px;
@@ -74,25 +77,42 @@ body {
 img {
   height: 302px;
   width: 302px;
+  border-radius: 8px;
 }
 .card-minusImage {
   width: 191px;
   height: 166px;
-} /*
-.description-price {
-  height: 140px;
-  margin-bottom: 24px;
-} */
+}
 h1 {
   color: var(--white);
 }
 .cost {
   color: var(--cyan400);
+  display: inline-flex;
+  align-items: center;
+}
+.cost::before {
+  content: "";
+  background-image: url("/images/icon-ethereum.svg");
+  padding-right: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 18px;
 }
 .cost-time {
   display: flex;
   justify-content: space-between;
   padding-bottom: var(--spacing-300);
+}
+h1,
+p,
+.cost-time {
+  width: 302px;
+}
+.border {
+  width: 302px;
+  border-bottom: 1px solid var(--blue800);
 }
 .avatar {
   height: 33px;
@@ -105,9 +125,21 @@ h1 {
 p {
   color: var(--blue500);
 }
+.time {
+  display: inline-flex;
+  align-items: center;
+}
+.time::before {
+  content: "";
+  background-image: url("/images/icon-clock.svg");
+  padding-right: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 18px;
+}
 strong {
   color: var(--white);
-  margin-left: 8px;
 }
 .attribution {
   display: flex;
@@ -116,5 +148,41 @@ strong {
   width: 231px;
   height: 33px;
   padding-top: calc(var(--spacing-300) + 16px);
-  border-top: 1px solid var(--blue800);
+}
+.card:hover h1 {
+  color: var(--cyan400);
+}
+.card:hover strong {
+  color: var(--cyan400);
+}
+
+.card:hover .image-container {
+  position: relative;
+  display: inline-block;
+}
+.card:hover .image-container img {
+  width: 100%;
+  display: block;
+}
+.card:hover .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cyan400-t);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.overlay-img {
+  display: none;
+}
+.overlay-img img {
+  width: 48px;
+  height: 48px;
+}
+.card:hover .overlay-img {
+  display: initial;
 }
